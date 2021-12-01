@@ -1,0 +1,132 @@
+
+# configuration (needs to be done only once)
+git config --global user.name "Bret Beheim"
+git config --global user.email "bret_beheim@eva.mpg.de"
+git config --global core.autocrlf input
+git config --global core.editor "nano -w"
+git config --list
+
+# todays command history
+pwd
+cd ~/Desktop/swc-2021-practice/
+pwd
+ls
+mv day1_Intro_to_R.R.txt day1_Intro_to_R.R
+ls
+git status
+git init
+git status
+ls
+ls -a
+git add day1_Intro_to_R.R 
+git status
+ls
+git commit -m "added day1 R script to repository"
+git status
+ls
+git log
+git status
+nano README.md
+ls
+git status
+git add day1_Intro_to_R.R 
+git status
+git add README.md
+git status
+git log
+git commit -m "added README.md; added some header info on the day1 R script"
+git log
+git checkout 3d463e day1_Intro_to_R.R 
+ls
+git checkout ac291c day1_Intro_to_R.R 
+pwd
+git checkout ac291c day1_Intro_to_R.R 
+git checkout ac291c README.md
+git checkout HEAD~1 day1_Intro_to_R.R 
+git status
+git add day1_Intro_to_R.R 
+git status
+git commit -m "a change i thought was good but in hindsight will be discovered as bad....:("
+git log
+git revert HEAD~1 day1_Intro_to_R.R 
+git revert HEAD~1
+git status
+git add day1_Intro_to_R.R 
+git commit -m "resolved a conflict with a corrupted version of the file"
+git log
+git status
+git diff HEAD day1_Intro_to_R.R 
+git log --oneline
+git log -1
+git log -2
+git log -h
+git log --help
+git status
+ls
+ls data
+nano data/gapminder_data.csv
+git status
+git add day1_Intro_to_R.R 
+git add data/
+git status
+git commit -m "added data folder with gapminder_data.csv"
+cd images
+pwd
+touch test01.jpg
+ls
+ls -al
+touch test02.jpg
+touch test03.jpg
+ls
+cd ..
+ls
+git status
+touch rawbinary.zip
+ls
+touch chimps.mov
+ls
+status
+git status
+nano .gitignore
+git status
+nano .gitignore
+git status
+git add .gitignore
+git status
+git commit -m "added .gitignore"
+cd ..
+ls
+swc-2021-practice/
+cd swc-2021-practice/
+ls
+ls -a
+git status
+cd minirepo
+ls
+git status
+git init
+ls -a
+git status
+cd ..
+git log --oneline
+git remote -v
+git remote add origin https://github.com/babeheim/swc-2021-practice.git
+git branch -M main
+git push -u origin main
+cd ..
+git clone https://github.com/babeheim/swc-2021-practice swc-2021-clone
+cd swc-2021-clone
+ls
+git log
+cd ..
+cd swc-2021-clone
+ls
+git checkout HEAD~2  README.md
+git checkout HEAD~2 README.md
+git checkout HEAD~3 README.md
+git status
+git commit -m "recovered README.md i accidentally deleted"
+git log
+git push origin main
+git log --oneline
+git pull origin main
